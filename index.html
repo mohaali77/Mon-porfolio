@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEZAÏR Mohand</title>
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Mohand Mezaïr</h1>
+            <nav>
+                <a href="#projects">Projets</a>
+                <a href="#skills">Compétences</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+        <section className="bg_skills" id='skills'>
+            <h2>Mes compétences</h2>
+            <div className='select-skills'>
+                <div className='select-front'>Front-End</div>
+                <div className='select-back'>Back-End</div>
+            </div>
+            <div className="container_skills">
+                <div className='container-cards'>
+                    <div className='infos-skills'>
+                        <p>Ici vous pourrez retrouver les langages de programmation, mais également d'autres outils et
+                            les technologies utilisés pour mes projets, qu'ils soient axés sur le Front-end ou le
+                            Back-end.</p>
+                    </div>
+                    <div className="card-skills"><img src={html} alt="" />
+                        <p>HTML</p>
+                    </div>
+                    <div className='card-skills'><img src={css} alt="" />
+                        <p>CSS</p>
+                    </div>
+                    <div className='card-skills'><img src={sass} alt="" />
+                        <p>Sass</p>
+                    </div>
+                    <div className='card-skills'><img src={js} alt="" />
+                        <p>Javascript</p>
+                    </div>
+                    <div className='card-skills'><img src={php} alt="" />
+                        <p>PHP</p>
+                    </div>
+                    <div className='card-skills'><img src={mySql} alt="" />
+                        <p>MySQL</p>
+                    </div>
+                    <div className='card-skills'><img src={react} alt="" />
+                        <p>React JS</p>
+                    </div>
+                    <div className='card-skills'><img src={vue} alt="" />
+                        <p>Vue JS</p>
+                    </div>
+                    <div className="card-skills"><img src={redux} alt="" />
+                        <p>Redux</p>
+                    </div>
+                    <div className="card-skills"><img src={jest} alt="" />
+                        <p>Jest</p>
+                    </div>
+                    <div className="card-skills"><img src={express} alt="" />
+                        <p>Express JS</p>
+                    </div>
+                    <div className="card-skills"><img src={figma} alt="" />
+                        <p>Figma</p>
+                    </div>
+                    <div className="card-skills"><img src={axios} alt="" />
+                        <p>Axios</p>
+                    </div>
+                    <div className="card-skills"><img src={jquery} alt="" />
+                        <p>jQuery</p>
+                    </div>
+                    {//<div className='card-skills'><img src={sql} alt="" />
+                        <p>SQL</p>
+                    </div>
+                    }
+                    <div className="card-skills"><img src={node} alt="" />
+                        <p>Node js</p>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </section>
+        <section className="bg_banner">
+            <img src='' alt="" />
+            <div className='banner-about'>
+                <p>
+                    Bienvenue, sur mon site ! <br /> <span> Je suis Mohand, et ici vous pourrez voir un aperçu de mes
+                        projets, qu'ils soient personnels, ou dans le cadre de mes formations.</span>
+                </p>
+
+            </div>
+        </section>
+        <section className="bg_projects" id='projects'>
+            <h2>Mes projets</h2>
+            <div className='infos-projects'>
+                <p>Ici vous pourrez retrouver les langages de programmation, mais également d'autres outils et les
+                    technologies utilisés pour mes projets, qu'ils soient axés sur le Front-end ou le Back-end.</p>
+            </div>
+            <section className="container_projects">
+                <Card data={data} />
+            </section>
+        </section>
+        <hr />
+        <section className="bg_contact" id='contact'>
+            <h2>Contact</h2>
+            <form onSubmit={handleSubmit}>
+                <div className='container_name_email'>
+                    <input type="text" name="name" className='input-name' value={formData.name} onChange={handleChange}
+                        required placeholder='Nom*' />
+
+                    <input type="email" name="email" className='input-email' value={formData.email}
+                        onChange={handleChange} required placeholder='E-mail*' />
+                </div>
+
+                <input type="text" name="subject" className='input-subject' value={formData.subject}
+                    onChange={handleChange} required placeholder='Objet*' />
+
+                <textarea name="message" value={formData.message} className='input-message' onChange={handleChange}
+                    required placeholder='Insérez votre message ici*' />
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+        <footer>
+            <div>© 2024 - Mohand Mezair</div>
+            <nav>
+                <a href="">Linkedin <img src="" alt="" /></a>
+                <a href="">GitHub <img src="" alt="" /></a>
+            </nav>
+        </footer>
+    </main>
+</body>
+
+</html>
