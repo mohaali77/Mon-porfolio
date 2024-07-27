@@ -1,0 +1,48 @@
+// Général
+
+body {
+    margin: 0;
+    background-color: #1F2020;
+    font-family: sans-serif;
+    color: #ffff
+}
+
+html {
+    scroll-behavior: smooth;
+    /* Active le défilement fluide pour toute la page */
+}
+
+// Header
+
+header {
+    height: 60px;
+    backdrop-filter: blur(3px);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h1 {
+        margin: 0;
+        font-size: 19px;
+        color: #EEEE;
+        margin-left: 15px;
+        font-weight: none;
+
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        width: 30%;
+        margin-right: 15px;
+
+        a {
+            text-decoration: none;
+            color: #EEEEEE;
+        }
+    }
+}
