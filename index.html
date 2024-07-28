@@ -3,93 +3,25 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MEZAÏR Mohand</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <meta="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MEZAÏR Mohand</title>
+        <link rel="stylesheet" href="styles/style.css">
 
 </head>
 
 <body>
+    <header>
+        <h1>Mohand Mezaïr - Développeur Full Stack</h1>
+        <nav>
+            <a href="#projects">Projets</a>
+            <a href="#skills">Compétences</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
     <main>
-        <header>
-            <h1>Mohand Mezaïr</h1>
-            <nav>
-                <a href="#projects">Projets</a>
-                <a href="#skills">Compétences</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </header>
-        <section className="bg_skills" id='skills'>
-            <h2>Mes compétences</h2>
-            <div className='select-skills'>
-                <div className='select-front'>Front-End</div>
-                <div className='select-back'>Back-End</div>
-            </div>
-            <div className="container_skills">
-                <div className='container-cards'>
-                    <div className='infos-skills'>
-                        <p>Ici vous pourrez retrouver les langages de programmation, mais également d'autres outils et
-                            les technologies utilisés pour mes projets, qu'ils soient axés sur le Front-end ou le
-                            Back-end.</p>
-                    </div>
-                    <div className="card-skills"><img src={html} alt="" />
-                        <p>HTML</p>
-                    </div>
-                    <div className='card-skills'><img src={css} alt="" />
-                        <p>CSS</p>
-                    </div>
-                    <div className='card-skills'><img src={sass} alt="" />
-                        <p>Sass</p>
-                    </div>
-                    <div className='card-skills'><img src={js} alt="" />
-                        <p>Javascript</p>
-                    </div>
-                    <div className='card-skills'><img src={php} alt="" />
-                        <p>PHP</p>
-                    </div>
-                    <div className='card-skills'><img src={mySql} alt="" />
-                        <p>MySQL</p>
-                    </div>
-                    <div className='card-skills'><img src={react} alt="" />
-                        <p>React JS</p>
-                    </div>
-                    <div className='card-skills'><img src={vue} alt="" />
-                        <p>Vue JS</p>
-                    </div>
-                    <div className="card-skills"><img src={redux} alt="" />
-                        <p>Redux</p>
-                    </div>
-                    <div className="card-skills"><img src={jest} alt="" />
-                        <p>Jest</p>
-                    </div>
-                    <div className="card-skills"><img src={express} alt="" />
-                        <p>Express JS</p>
-                    </div>
-                    <div className="card-skills"><img src={figma} alt="" />
-                        <p>Figma</p>
-                    </div>
-                    <div className="card-skills"><img src={axios} alt="" />
-                        <p>Axios</p>
-                    </div>
-                    <div className="card-skills"><img src={jquery} alt="" />
-                        <p>jQuery</p>
-                    </div>
-                    {//<div className='card-skills'><img src={sql} alt="" />
-                        <p>SQL</p>
-                    </div>
-                    }
-                    <div className="card-skills"><img src={node} alt="" />
-                        <p>Node js</p>
-                    </div>
-
-
-
-                </div>
-            </div>
-        </section>
-        <section className="bg_banner">
+        <section class="bg_banner">
             <img src='' alt="" />
-            <div className='banner-about'>
+            <div class='banner-about'>
                 <p>
                     Bienvenue, sur mon site ! <br /> <span> Je suis Mohand, et ici vous pourrez voir un aperçu de mes
                         projets, qu'ils soient personnels, ou dans le cadre de mes formations.</span>
@@ -97,45 +29,112 @@
 
             </div>
         </section>
-        <section className="bg_projects" id='projects'>
+        <section class="bg_skills" id='skills'>
+            <h2>Mes compétences</h2>
+            <div class="container_skills">
+                <div class='container-cards'>
+                    <div class="card-skills"><img src='./assets/logos/html.svg' alt="" />
+                        <p>HTML</p>
+                    </div>
+                    <div class='card-skills'><img src='./assets/logos/css.svg' alt="" />
+                        <p>CSS</p>
+                    </div>
+                    <div class='card-skills'><img src='./assets/logos/sass.svg' alt="" />
+                        <p>Sass</p>
+                    </div>
+                    <div class='card-skills'><img src='./assets/logos/js.svg' alt="" />
+                        <p>Javascript</p>
+                    </div>
+                    <div class='card-skills'><img src='./assets/logos/react.svg' alt="" />
+                        <p>React JS</p>
+                    </div>
+                    <div class='card-skills'><img src='./assets/logos/vue.svg' alt="" />
+                        <p>Vue JS</p>
+                    </div>
+                    <div class="card-skills"><img src='./assets/logos/redux.svg' alt="" />
+                        <p>Redux</p>
+                    </div>
+                    <div class="card-skills"><img src='./assets/logos/jest.svg' alt="" />
+                        <p>Jest</p>
+                    </div>
+                    <div class="card-skills"><img src='./assets/logos/figma.svg' alt="" />
+                        <p>Figma</p>
+                    </div>
+                    <div class="card-skills"><img src='./assets/logos/axios.svg' alt="" />
+                        <p>Axios</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="container_skills">
+                <div class='container-cards'>
+                    <div class='card-skills'><img src='./assets/logos/java.png' alt="" />
+                        <p>Java</p>
+                    </div>
+                    <div class='card-skills'><img src='./assets/logos/spring_boot.svg' alt="" />
+                        <p>Spring Boot</p>
+                    </div>
+                    <div class="card-skills"><img src='./assets/logos/spring_security.svg' alt="" />
+                        <p>Spring Security</p>
+                    </div>
+                    <div class="card-skills"><img src='./assets/logos/mySql.svg' alt="" />
+                        <p>MySQL</p>
+                    </div>
+                    <div class="card-skills"><img src='./assets/logos/express.svg' alt="" />
+                        <p>Express JS</p>
+                    </div>
+                    <div class="card-skills"><img src='./assets/logos/mongodb.svg' alt="" />
+                        <p>MongoDB</p>
+                    </div>
+                    <div class="card-skills"><img src='./assets/logos/junit.svg' alt="" />
+                        <p>JUnit</p>
+                    </div>
+                    <div class="card-skills"><img src='./assets/logos/node.svg' alt="" />
+                        <p>Node js</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg_projects" id='projects'>
             <h2>Mes projets</h2>
-            <div className='infos-projects'>
+            <div class='infos-projects'>
                 <p>Ici vous pourrez retrouver les langages de programmation, mais également d'autres outils et les
                     technologies utilisés pour mes projets, qu'ils soient axés sur le Front-end ou le Back-end.</p>
             </div>
-            <section className="container_projects">
+            <section class="container_projects">
                 <Card data={data} />
             </section>
         </section>
         <hr />
-        <section className="bg_contact" id='contact'>
+        <section class="bg_contact" id='contact'>
             <h2>Contact</h2>
             <form onSubmit={handleSubmit}>
-                <div className='container_name_email'>
-                    <input type="text" name="name" className='input-name' value={formData.name} onChange={handleChange}
-                        required placeholder='Nom*' />
+                <div class='container__email'>
+                    <input type="text"="" class='input-' value={formData.} onChange={handleChange} required
+                        placeholder='Nom*' />
 
-                    <input type="email" name="email" className='input-email' value={formData.email}
-                        onChange={handleChange} required placeholder='E-mail*' />
+                    <input type="email"="email" class='input-email' value={formData.email} onChange={handleChange}
+                        required placeholder='E-mail*' />
                 </div>
 
-                <input type="text" name="subject" className='input-subject' value={formData.subject}
-                    onChange={handleChange} required placeholder='Objet*' />
+                <input type="text"="subject" class='input-subject' value={formData.subject} onChange={handleChange}
+                    required placeholder='Objet*' />
 
-                <textarea name="message" value={formData.message} className='input-message' onChange={handleChange}
-                    required placeholder='Insérez votre message ici*' />
+                <textarea="message" value={formData.message} class='input-message' onChange={handleChange} required
+                    placeholder='Insérez votre message ici*' />
 
                 <button type="submit">Envoyer</button>
             </form>
         </section>
-        <footer>
-            <div>© 2024 - Mohand Mezair</div>
-            <nav>
-                <a href="">Linkedin <img src="" alt="" /></a>
-                <a href="">GitHub <img src="" alt="" /></a>
-            </nav>
-        </footer>
+
     </main>
+    <footer>
+        <div>© 2024 - Mohand Mezair</div>
+        <nav>
+            <a href="">Linkedin <img src="" alt="" /></a>
+            <a href="">GitHub <img src="" alt="" /></a>
+        </nav>
+    </footer>
 </body>
 
 </html>
